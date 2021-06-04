@@ -6,13 +6,21 @@
 }
 .product-img{
     width: 100%;
-    height: 380px;
+    height: 280px;
     overflow: hidden;
 }
 
 .product-img img{
     width: 100%;
 }
+
+.product-img img:hover{
+    transform: scale(1.2);
+    transition: 1s;
+    cursor: pointer;
+    overflow: hidden;
+}
+
 .product{
     width: 25%;
     padding: 0 20px;

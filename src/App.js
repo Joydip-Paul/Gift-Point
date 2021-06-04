@@ -1,18 +1,29 @@
 import "./App.css";
-import Banner from "./Components/Banner";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import Banner from "./Components/Banner";
 import Navbar from "./Components/Navbar";
 import Products from "./Components/Products";
 import ProductsContextProvider from "./Global/ProductsContext";
+import Cart from "./Components/Cart";
+import NotFound from "./Components/NotFound";
+import CartContextProvider from "./Global/CartContext";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Banner />
       <ProductsContextProvider>
-        <div className = "container">
-          <Products />
-        </div>
+        <CartContextProvider>
+          <Router>
+            <Navbar />
+            <switch>
+              <Route path="/" exact component={Products} />
+              <Route path="/cart" exact component={Cart} />
+              <Route component={NotFound} />
+            </switch>
+            <Footer />
+          </Router>
+        </CartContextProvider>
       </ProductsContextProvider>
     </div>
   );

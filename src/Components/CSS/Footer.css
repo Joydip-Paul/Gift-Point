@@ -1,0 +1,16 @@
+.Footer-area{
+    background-color: var(--lightDark);
+    padding: 100px;
+    width: 100%;
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+}
+
+p{
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
