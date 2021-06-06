@@ -8,6 +8,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .details{
@@ -38,15 +39,16 @@ body{
 
 .cart-product-name{
     display: inline-block;
-    width: 150px;
+    /* width: 150px; */
     padding: 0 15px;
     font-weight: 600;
     font-size: 18px;
+    font-size: 16px;
 }
 
 .cart-product-price{
     display: inline-block;
-    width: 120px;
+    /* width: 100px; */
     padding: 0 15px;
     font-weight: 400;
     text-align: center;
@@ -103,8 +105,6 @@ body{
 .cart-summary{
     width: 25%;
     background-color: var(--mainColor);
-    position: absolute;
-    right: 50px;
 }
 
 .summary h3{

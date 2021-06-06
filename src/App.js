@@ -8,6 +8,7 @@ import Cart from "./Components/Cart";
 import NotFound from "./Components/NotFound";
 import CartContextProvider from "./Global/CartContext";
 import Footer from "./Components/Footer";
+import './res.css'
 
 function App() {
   return (

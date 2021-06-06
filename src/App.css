@@ -1,28 +1,23 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --mainColor: #fc5404;
   --whiteColor: #fff;
   --blackColor: #000;
   --lightDark: #222;
 }
 
-body{
-  font-family: 'Lato', sans-serif;
+body {
+  font-family: "Lato", sans-serif;
 }
 
-.not-found{
+.not-found {
   margin-top: 100px;
   text-align: center;
-  /* position: absolute;
-  top: 20%;
-  left: 50%;
-  font-size: 50px;
-  transform: translate(-50%,-20%); */
-  /* background-color: var(--mainColor);
-  padding: 20px; */
 }
+
+

@@ -19,7 +19,7 @@ const Cart = (props) => {
     if (status === "success") {
       dispatch({ type: 'EMPTY' });
       props.history.push('/');
-      toast.success("You Have Paid Successfully", {position: toast.POSITION.TOP_RIGHT});
+      toast.success("You Have Paid Successfully. Thank You for Shopping", {position: toast.POSITION.TOP_RIGHT});
     }
     console.log(response);
   };
@@ -34,19 +34,22 @@ const Cart = (props) => {
               </span>
               <span className="cart-product-name">{cart.name}</span>
               <span className="cart-product-price">{cart.price}</span>
-              <span
-                className="inc"
-                onClick={() => dispatch({ type: "INC", id: cart.id, cart })}
-              >
-                <i className="fas fa-plus"></i>
-              </span>
-              <span className="cart-product-qty">{cart.qty}</span>
-              <span
-                className="dec"
-                onClick={() => dispatch({ type: "DEC", id: cart.id, cart })}
-              >
-                <i className="fas fa-minus"></i>
-              </span>
+
+                <span
+                  className="inc"
+                  onClick={() => dispatch({ type: "INC", id: cart.id, cart })}
+                >
+                  <i className="fas fa-plus"></i>
+                </span>
+                <span className="cart-product-qty">{cart.qty}</span>
+                <span
+                  className="dec"
+                  onClick={() => dispatch({ type: "DEC", id: cart.id, cart })}
+                >
+                  <i className="fas fa-minus"></i>
+                </span>
+
+
               <span className="product-total-price">
                 {cart.price * cart.qty} Taka
               </span>

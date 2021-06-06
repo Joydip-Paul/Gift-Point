@@ -5,11 +5,25 @@ const stripe = require("stripe")(
 );
 const { v4: uuidv4 } = require("uuid");
 const app = express();
+
+// const path = require('path');
+
 app.use(cors());
 app.use(express.json());
 app.get("/", (req, res) => {
   res.send("Welcome into react shop website");
 });
+
+
+// if (process.env.NODE_ENV === 'production') {
+//   app.use(express.static('client/build'))
+//   app.get('*', (req, res) => {
+//     res.send(path.resolve(__dirname,'client','build','index.html'))
+//   })
+// }
+
+
+
 app.post("/checkout", async (req, res) => {
   let error;
   let status;

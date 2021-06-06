@@ -7,7 +7,7 @@ const Banner = () => {
         <header>
           <div className="headerText">
             <div>
-              <h1>pick up your Present from here</h1>
+              <h1 className = "BannerTitle">pick up your Present from here</h1>
               <p>Enjoy online shopping with Gift Point</p>
             </div>
           </div>
